@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThermalHelper", "ThermalHelper\ThermalHelper.csproj", "{6AF1C76A-B338-4152-89B5-B07097E38C7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AF1C76A-B338-4152-89B5-B07097E38C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF1C76A-B338-4152-89B5-B07097E38C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF1C76A-B338-4152-89B5-B07097E38C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF1C76A-B338-4152-89B5-B07097E38C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {185D0689-FAE3-4314-85DD-F01EE6076915}
+	EndGlobalSection
+EndGlobal
