@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "ThermalHelper": {
-      "commandName": "Project",
-      "commandLineArgs": "thermalhlp:AUTO@Two_Pilots@0@25@250"
-    }
-  }
-}

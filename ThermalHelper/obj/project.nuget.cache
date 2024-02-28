@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "f+mTUEm097EZizpLgBKV6ONJ8MWbaL64cKIUJ1ducatpuwZV8HwdqM5CzRMvuCEtq39StdX24wHMnujNgl0Fug==",
+  "success": true,
+  "projectFilePath": "C:\\Proyectos_SELF\\ThermalHelper\\CDOpen\\ThermalHelper\\ThermalHelper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DEVELOPER_POS\\.nuget\\packages\\esc-pos-usb-net\\1.1.3\\esc-pos-usb-net.1.1.3.nupkg.sha512",
+    "C:\\Users\\DEVELOPER_POS\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+    "C:\\Users\\DEVELOPER_POS\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+    "C:\\Users\\DEVELOPER_POS\\.nuget\\packages\\system.drawing.common\\4.6.0\\system.drawing.common.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

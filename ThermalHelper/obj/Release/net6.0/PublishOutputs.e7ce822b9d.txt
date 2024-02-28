@@ -1,0 +1,11 @@
+C:\ThermalHelperCRX\ThermalHelper.exe
+C:\ThermalHelperCRX\ThermalHelper.dll
+C:\ThermalHelperCRX\ThermalHelper.deps.json
+C:\ThermalHelperCRX\ThermalHelper.runtimeconfig.json
+C:\ThermalHelperCRX\ThermalHelper.pdb
+C:\ThermalHelperCRX\ESC-POS-USB-NET.dll
+C:\ThermalHelperCRX\Microsoft.Win32.SystemEvents.dll
+C:\ThermalHelperCRX\System.Drawing.Common.dll
+C:\ThermalHelperCRX\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\ThermalHelperCRX\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\ThermalHelperCRX\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll

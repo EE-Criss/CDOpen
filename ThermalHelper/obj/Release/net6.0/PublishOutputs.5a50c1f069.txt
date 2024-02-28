@@ -1,0 +1,11 @@
+C:\Proyectos\ThermalHelper\ThermalHelper\bin\Release\net6.0\publish\ThermalHelper.exe
+C:\Proyectos\ThermalHelper\ThermalHelper\bin\Release\net6.0\publish\ThermalHelper.dll
+C:\Proyectos\ThermalHelper\ThermalHelper\bin\Release\net6.0\publish\ThermalHelper.deps.json
+C:\Proyectos\ThermalHelper\ThermalHelper\bin\Release\net6.0\publish\ThermalHelper.runtimeconfig.json
+C:\Proyectos\ThermalHelper\ThermalHelper\bin\Release\net6.0\publish\ThermalHelper.pdb
+C:\Proyectos\ThermalHelper\ThermalHelper\bin\Release\net6.0\publish\ESC-POS-USB-NET.dll
+C:\Proyectos\ThermalHelper\ThermalHelper\bin\Release\net6.0\publish\Microsoft.Win32.SystemEvents.dll
+C:\Proyectos\ThermalHelper\ThermalHelper\bin\Release\net6.0\publish\System.Drawing.Common.dll
+C:\Proyectos\ThermalHelper\ThermalHelper\bin\Release\net6.0\publish\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Proyectos\ThermalHelper\ThermalHelper\bin\Release\net6.0\publish\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Proyectos\ThermalHelper\ThermalHelper\bin\Release\net6.0\publish\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
