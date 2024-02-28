@@ -2,6 +2,7 @@
 
 using ESC_POS_USB_NET.Printer;
 using System.Text;
+using System.Diagnostics;
 
 namespace CRX
 {
@@ -12,12 +13,8 @@ namespace CRX
         App(string[] args)
         {
 
-            //DEBUG FOR PRINTING ARGUMENTS
-            //Console.WriteLine(CurrentClass);
-            Console.WriteLine(args[0]);
-
             //WE GET THE ARGUMENTS WE NEED FROM CMD LINE 0
-            // EXEC_TYPE @ PRINER_NAME @ CD# @ OPT1 @ OPT2
+            // EXEC_TYPE @ PRINER_NAME @ CD PORT# @ OPT1 @ OPT2
 
             /* There are 3 options
              * EASY - We use the library to open the cash drawer.
@@ -28,7 +25,7 @@ namespace CRX
             //We Need to filtrate first the name of the protocol comming from the href call in the web interface
             int idx = args[0].IndexOf(":");
             string command = args[0].Substring(idx + 1);
-            Console.WriteLine(command);
+            //Console.WriteLine(command);
             string[] subs = command.Split('@');
             var PrinterName = subs[1];
 
@@ -36,17 +33,15 @@ namespace CRX
             string strCmdText;
             char[] lines;
             string[] sas;
-            ASCIIEncoding ascii = new ASCIIEncoding();
 
             switch (subs[0])
             {
                 case "EASY":
-                    
+                    Console.WriteLine(PrinterName);
                     //We use the library as this may be the easiest way to achieve this
                     Printer printer = new Printer(PrinterName);
                     printer.OpenDrawer();
                     break;
-
                 case "AUTO":
                     
                     try
@@ -65,7 +60,7 @@ namespace CRX
                         {
                             File.Delete(@docPath + "\\OPENCD.plts");
                         }
-
+                        //We Create the file with propper encoding as default will parse the wrong characters.
                         using (StreamWriter outputFile = new StreamWriter(File.Open(Path.Combine(docPath, "OPENCD.plts"), FileMode.CreateNew), Encoding.Latin1))
                         {
                             foreach (char line in lines)
@@ -74,7 +69,20 @@ namespace CRX
                         strCmdText = "/C " +docPath+ "\\spool.exe " + docPath + "\\OPENCD.plts " + PrinterName;
                         //Console.WriteLine(strCmdText);
 
-                        System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+                        //System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+
+                        ProcessStartInfo startInfo = new ProcessStartInfo();
+                        startInfo.RedirectStandardOutput = true;
+                        startInfo.RedirectStandardError = true;
+                        startInfo.UseShellExecute = false;
+                        startInfo.CreateNoWindow = true;
+
+                        Process cmd = new Process();
+                        cmd.StartInfo = startInfo;
+                        cmd.StartInfo.FileName = "cmd.exe";
+                        cmd.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                        cmd.StartInfo.Arguments = strCmdText;
+                        cmd.Start();
                     }
                     catch (Exception ex)
                     {
@@ -104,8 +112,21 @@ namespace CRX
                             outputFile.Write(line);
                     }
                     strCmdText = "/C " + docPath + "\\spool.exe " + docPath + "\\OPENCD.plts " + PrinterName;
-                    Console.WriteLine(strCmdText);
-                    System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+                        //Console.WriteLine(strCmdText);
+                        //System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+
+                        ProcessStartInfo startInfo = new ProcessStartInfo();
+                        startInfo.RedirectStandardOutput = true;
+                        startInfo.RedirectStandardError = true;
+                        startInfo.UseShellExecute = false;
+                        startInfo.CreateNoWindow = true;
+
+                        Process cmd = new Process();
+                        cmd.StartInfo = startInfo;
+                        cmd.StartInfo.FileName = "cmd.exe";
+                        cmd.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                        cmd.StartInfo.Arguments = strCmdText;
+                        cmd.Start();
                     }
                     catch (Exception ex)
                     {

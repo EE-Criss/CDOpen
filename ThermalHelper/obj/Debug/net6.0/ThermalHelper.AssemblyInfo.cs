@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThermalHelper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21651ce3823ff2ae9f79c6cfcfa154e49d065cb8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+448adaecc55d953e7b7d2f01f5963e89f2740d0a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThermalHelper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThermalHelper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
