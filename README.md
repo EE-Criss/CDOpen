@@ -22,4 +22,13 @@ For the command to be recognized you need to use the *href* attribute, the comma
 
 - **PRINER_NAME** The name of the printer compatible with ESC/POS commands, it cannot contain spaces.
 - **CD#** Certain printers have more than 1 port for the cash drawer, you must specify which one the opening pulse is sent to.
-- **OPT1 & OPT2** Only required when using the *MANUAL* option in the *EXEC_TYPE* argument. A more detailed explanation can be found in the following resource (refers to parameters *t1* and *t2*). [How to program a cash drawer to open using Escape commands](https://www.beaglehardware.com/howtoprogramcashdrawer.html)
+- **OPT1 & OPT2** Only required when using the *MANUAL* option in the *EXEC_TYPE* argument. A more detailed explanation can be found in the following resource (refers to parameters *t1* and *t2*). [How to program a cash drawer to open using Escape commands](https://www.beaglehardware.com/howtoprogramcashdrawer.html).
+
+#### Examples of the Command
+```
+href="ThermalHLP:EASY@PRINTER1@0@@"
+
+href="ThermalHLP:AUTO@PRINTER1@0@@"
+
+href="ThermalHLP:MANUAL@PRINTER1@1@25@250"
+```
